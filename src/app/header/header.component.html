@@ -1,0 +1,54 @@
+<header>
+   <div class="header-container">
+      <div class="logo-menu-container">
+         <div class="header-logo">
+            <a href="/"><img src="assets/img/logo.png"></a>
+         </div>
+            <div (click)="showMenu()"  class="menu-responsive d-none">
+               <img src="assets/img/activity-feed-64.png">
+            </div>
+         <div id="menu" class="overlay-menu d-none">
+            <div (click)="closeMenu()" class="close-menu"><button class="btn">X</button></div>
+           <div class="nav-list">
+              <a href="#">Home</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#aboutme">About Me</a>
+              <a href="#aboutme">Skills</a>
+              <a href="#contact"><b>Contact</b></a>
+            </div>
+         </div>
+            <div (click)="showMenu()" class="menu-bar d-none">
+               <img src="assets/img/6593477_menu-png-white-menu-icon-svg-png-download-removebg-preview.png">
+            </div>
+         <div class="header-link menu hide-mobile">
+            <a href="/" style="color:#00e3aa ;"><b>Home</b></a>
+            <a href="#aboutme"><b>About Me</b></a>
+            <a href="#skills"><b>Skills</b></a>
+            <a href="#portfolio"><b>Portfolio</b></a>
+            <a href="#contact"><b>Contact</b></a>
+         </div>
+      </div>
+      <div class="toggle-container">
+         <div class="toggle-logo">
+            <img *ngIf="!showImage" (click)="toggleImage()" src="assets/img/Vader.png">
+            <img *ngIf="showImage" (click)="toggleImage()"src="assets/img/strormtrooper.png">
+         </div>
+      </div>
+   
+</div>
+
+ </header>
+
+
+
+ <!--
+       <div id="menu" class="overlay-menu d-none" >
+          <div (click)="closeMenu()" class="close-menu"><button class="btn">close</button></div>
+         <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#aboutme">ABOUT ME</a></li>
+       
+         </ul>
+
+       </div>-->

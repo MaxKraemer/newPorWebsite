@@ -1,0 +1,20 @@
+.data-container{
+
+    height: 100%;
+    width: 90%;
+    color: white;
+    padding-left: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+ 
+    .data-container {
+        height: 100%;
+        width: 60%;
+        padding-top: 100px;
+        padding-left: 35px;
+    }
+}
+    

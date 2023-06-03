@@ -1,0 +1,148 @@
+.headline-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-top: 170px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #fff;
+  font-size: 22px;
+}
+
+p {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.headline-contact{
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.button{
+    display: inline-block;
+    background-color: #00e3aa;
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem; 
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 1;
+    background-color: white;
+    color: #00e3aa;
+
+}
+
+.headline-image img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.fadeIn {
+    
+    margin-right: 40px;
+    
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    font-size: 56px;
+    color: white;
+  
+}
+ 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+
+}  
+
+.show-mobile {
+
+  display: none;
+}
+
+@media (max-width: 800px) {
+
+  .headline-container{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+  .hide-mobile {
+
+    display: none;
+  }
+
+  .headline-image img {
+
+    height: 350px;
+    width: 350px;
+  }
+
+  .headline-contact {
+
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .mobile-headline {
+
+    display: contents;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  
+  
+  
+  
+}
+
+

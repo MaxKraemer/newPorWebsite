@@ -1,0 +1,109 @@
+.port-container {
+
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.port-section {
+
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+.port-section h2 {
+
+    text-align: center;
+    color: #00e3aa;
+    font-size: 45px;
+}
+
+.port-img img {
+
+   
+    height: 250px;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 400px;
+    cursor: pointer;
+    transition: 1s ease;
+    
+
+}
+
+.port-img img:hover {
+
+    transform: scale(1.1);
+    transition: 0.5s ease-out ;
+
+}
+
+.port-container2 {
+
+    display: flex;
+    justify-content: center;
+     
+}
+
+.port-container3 {
+
+    display: flex;
+    justify-content: center;
+     
+}
+
+.mg-32 {
+
+    margin-right: 32px;
+}
+
+@media (max-width: 800px) {
+
+    .port-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .port-container2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .port-container3{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .port-section {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mg-32 {
+
+       margin-right: 0;
+    }
+
+    .port-img img {
+
+        width: 350px;
+    }
+    
+}
