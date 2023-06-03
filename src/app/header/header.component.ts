@@ -14,10 +14,12 @@ export class HeaderComponent implements OnInit {
   }
 
   public showImage = false;
+  public status = 'Enable'; 
 
 
   public toggleImage(): void {
     this.showImage = !this.showImage;
+    this.status = this.showImage ? 'Enable' : 'Disable';
   }
 
   showMenu(){
