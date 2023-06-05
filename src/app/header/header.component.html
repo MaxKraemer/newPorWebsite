@@ -1,4 +1,4 @@
-<header>
+<header [ngClass]="{'white' : showImage}">
    <div class="header-container">
       <div class="logo-menu-container">
          <div class="header-logo">
@@ -21,7 +21,7 @@
                <img src="assets/img/6593477_menu-png-white-menu-icon-svg-png-download-removebg-preview.png">
             </div>
          <div class="header-link menu hide-mobile">
-            <a href="/" style="color:#00e3aa ;"><b>Home</b></a>
+            <a href="/" style="color:#ff6e48 ;"><b>Home</b></a>
             <a href="#aboutme"><b>About Me</b></a>
             <a href="#skills"><b>Skills</b></a>
             <a href="#portfolio"><b>Portfolio</b></a>
@@ -30,8 +30,8 @@
       </div>
       <div class="toggle-container">
          <div class="toggle-logo">
-            <img *ngIf="!showImage"  [ngClass]="{'black' : showImage}" (click)="toggleImage()" src="assets/img/Vader.png">
-            <img *ngIf="showImage" [ngClass]="{'white' : showImage}" (click)="toggleImage()"src="assets/img/strormtrooper.png">
+            <img *ngIf="showImage"  (click)="toggleImage()" src="assets/img/Vader.png">
+            <img *ngIf="!showImage"  (click)="toggleImage()"src="assets/img/strormtrooper.png">
          </div>
       </div>
    

@@ -44,13 +44,13 @@ img {
 }
 
 .header-container a{
-    color: white;
+    color: #ffffff;
     margin-left: 50px;
     text-decoration: none;
 }
 
 .header-container a:hover{
-    color: #00e3aa;
+    color: #ff6e48;
     text-decoration: underline;
 }
 
@@ -79,12 +79,12 @@ img {
 }
 
 .menu ul li a {
-    color: #00e3aa;
+    color: #ff6e48;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: white;
+    color: #ff6e48;
 }
 
 .d-none {
@@ -103,6 +103,9 @@ nav ul li a:hover {
 
 .white {
     background-color: white;
+    b {
+        color: black;
+    }
 }
 
 @media (max-width: 800px){
@@ -136,7 +139,7 @@ nav ul li a:hover {
     .overlay-menu {
         height: 220px;
         width: 200px;
-        background-color: #00e3aa;
+        background-color: #ff6e48;
         border-radius: 5px;
         position: absolute;
         top: 0;
@@ -164,9 +167,9 @@ nav ul li a:hover {
 
     }
     .btn{
-        background-color: #00e3aa;
+        background-color: #ff6e48;
         border: none;
-        color: white;
+        color: #ff6e48;
         font-size: 20px;
         padding-right: 20px;
         padding-top: 10px;
@@ -174,7 +177,7 @@ nav ul li a:hover {
 
     }
     .header-container a:hover {
-        color: white;
+        color: #ff6e48;
         text-decoration: underline;
     }
 
