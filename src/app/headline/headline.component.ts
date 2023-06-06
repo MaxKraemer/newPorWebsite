@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { gsap } from "gsap";
+import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 @Component({
@@ -22,27 +25,18 @@ export class HeadlineComponent implements OnInit {
   showHeadline = true;
 
   ngOnInit(){
-
-    this.showImages();
-
-  }
-  
-  showImages() {
-    
-    setInterval(() => {
-
-      this.currentHeadlines++;
-      this.currentHeadlines = this.currentHeadlines % this.headlines.length;
-      this.showHeadline = false;
-
-      setInterval (() => {
-
-        this.showHeadline = true;
-
-      },400);
-
-    },6000);
-
+    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
+    gsap.from('img', {
+      scrollTrigger:{
+        trigger: 'img',
+      },
+      y: -100,
+    });
+    gsap.from('h1', {
+      scrollTrigger: 'h1',
+      x: -100,
+      smoothOrigin: true,
+    });
 
   }
 
