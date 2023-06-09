@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   constructor(public gsap: GsapService) { }
 
   ngOnInit(): void {
-    this.gsap.gsapAnimation();
+    this.gsap.gsapAnimationHeader();
   }
 
 

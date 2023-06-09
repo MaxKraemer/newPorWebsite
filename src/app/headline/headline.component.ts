@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { gsap } from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { GsapService } from 'src/service/gsap.service';
 
 
 @Component({
@@ -20,12 +21,13 @@ export class HeadlineComponent implements OnInit {
 
   ];
 
+  constructor(public gsap: GsapService) { }
+
   //onload function 
   currentHeadlines = 0;
   showHeadline = true;
 
   ngOnInit(){
-    
 
   }
 

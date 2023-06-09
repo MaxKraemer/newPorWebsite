@@ -10,12 +10,54 @@ export class GsapService {
 
   constructor() { }
 
-  public gsapAnimation(){
+  public gsapAnimationHeader(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('a', {
       opacity: 0,
       stagger: 0.2,
     });
+    gsap.from('#toogle', {
+      opacity: 0,
+      x: 100
+    });
+    gsap.from('#logo', {
+      opacity: 0,
+      y: -100,
+    });
   };
+
+  public gsapScrollAbout(){
+    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
+    gsap.from('#img', {
+      duration: 1.5,
+      opacity: 0,
+      x: -100,
+      scrollTrigger: {
+        trigger: '#aboutContainer',
+        start: 'top center',
+      },
+    });
+    gsap.from('#textArea', {
+      duration: 1.5,
+      opacity: 0,
+      y: 100,
+       scrollTrigger: {
+        trigger: '#aboutContainer',
+        start: 'top center',
+      },
+    });
+    gsap.from('#textBox', {
+      duration: 1.5,
+      opacity: 0,
+      y: -100,
+       scrollTrigger: {
+        trigger: '#aboutContainer',
+        start: 'top center',
+      },
+    });
+    
+  };
+
+
  
 }

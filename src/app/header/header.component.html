@@ -1,7 +1,7 @@
 <header>
    <div class="header-container">
       <div class="logo-menu-container">
-         <div class="header-logo">
+         <div class="header-logo" id="logo">
             <a href="/"><img src="assets/img/logo.png"></a>
          </div>
             <div (click)="showMenu()"  class="menu-responsive d-none">
@@ -29,7 +29,7 @@
          </div>
       </div>
       <div class="toggle-container">
-         <div class="toggle-logo">
+         <div class="toggle-logo" id="toogle">
             <img *ngIf="showImage"  (click)="toggleImage()" src="assets/img/Vader.png">
             <img *ngIf="!showImage"  (click)="toggleImage()"src="assets/img/strormtrooper.png">
          </div>

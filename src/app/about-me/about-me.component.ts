@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { gsap } from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { GsapService } from 'src/service/gsap.service';
 
 
 @Component({
@@ -11,10 +12,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public gsap: GsapService) { }
 
   ngOnInit(): void {
-  
+    this.gsap.gsapScrollAbout();
   }
 
 }
