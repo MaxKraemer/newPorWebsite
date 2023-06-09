@@ -25,18 +25,7 @@ export class HeadlineComponent implements OnInit {
   showHeadline = true;
 
   ngOnInit(){
-    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
-    gsap.from('img', {
-      scrollTrigger:{
-        trigger: 'img',
-      },
-      y: -100,
-    });
-    gsap.from('h1', {
-      scrollTrigger: 'h1',
-      x: -100,
-      smoothOrigin: true,
-    });
+    
 
   }
 

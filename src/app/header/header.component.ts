@@ -3,6 +3,7 @@ import { __classPrivateFieldSet } from 'tslib';
 import { gsap } from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { GsapService } from 'src/service/gsap.service';
 
 @Component({
   selector: 'app-header',
@@ -11,17 +12,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public gsap: GsapService) { }
 
   ngOnInit(): void {
-    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
-    gsap.from('header', {
-      scrollTrigger: 'header',
-      duration: 0.5,
-      opacity: 0,
-      stagger: 0.5,
-      y: -100,
-    });
+    this.gsap.gsapAnimation();
   }
 
 
