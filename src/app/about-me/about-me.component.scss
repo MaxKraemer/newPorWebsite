@@ -8,7 +8,7 @@ h2 {
 }
 
 .about-container {
-    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    background: linear-gradient(1deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -16,14 +16,6 @@ h2 {
     text-align: center;
     font-size: 30px;
     padding-top: 40px;
-}
-
-.aboutContainer span {
-    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent ;
 }
 
 .images {
@@ -47,7 +39,7 @@ h2 {
     font-size: 20px;
 }
 
-p{
+p {
     color: var(--text-color);
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -61,10 +53,6 @@ p{
     color: white;
     font-family: 'Open Sans', sans-serif;
     padding-top: 50px;
-}
-
-.text1{
-    margin-right: 40px;
 }
 
 .text2 {
