@@ -1,29 +1,31 @@
 .port-container {
-
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .port-section {
-
     padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
-    
+}
+
+.port-title {
+    font-size: 39px;
+    font-family: sans-serif;
+    background: linear-gradient(60deg, #9845E8 -1.72%, #33D2FF 20.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .port-section h2 {
-
     text-align: center;
     color: #fc0e49;
     font-size: 45px;
 }
 
 .port-img img {
-
-   
     height: 250px;
     border-radius: .5rem;
     overflow: hidden;
@@ -31,33 +33,24 @@
     width: 400px;
     cursor: pointer;
     transition: 1s ease;
-    
-
 }
 
 .port-img img:hover {
-
     transform: scale(1.1);
     transition: 0.5s ease-out ;
-
 }
 
 .port-container2 {
-
     display: flex;
     justify-content: center;
-     
 }
 
 .port-container3 {
-
     display: flex;
     justify-content: center;
-     
 }
 
 .mg-32 {
-
     margin-right: 32px;
 }
 

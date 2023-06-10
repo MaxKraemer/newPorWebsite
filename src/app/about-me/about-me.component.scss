@@ -1,24 +1,29 @@
 .about {
-  
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 150px;
 }
+h2 {
+    font-family: sans-serif;
+}
 
 .about-container {
-    position: absolute;
-    color: #fc0e49;
-    height: 300px;
-    width: 80%;
-    background-color: black;
-    border-radius: 10px;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     text-align: center;
     font-size: 30px;
     padding-top: 40px;
 }
 
 .aboutContainer span {
-    color: white;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent ;
 }
 
 .images {
@@ -42,8 +47,12 @@
     font-size: 20px;
 }
 
-.slogan p {
-    color: white;
+p{
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;    
 }
 
 .textArea {
@@ -64,7 +73,11 @@
 
 .textArea h3 {
     text-align: center;
-    color: #fc0e49;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
     font-size: 30px;
 }
 
@@ -74,59 +87,6 @@
     font-size: 16px;
     line-height: 28px;
 }
-
-.fade {
-    position: relative;
-    width: 100%;
-    min-height: 60vh;
-    top: -25px;
-    background-image: linear-gradient(0deg, transparent, black 75%);
-    z-index: 1;
-  }
-  
-  .star-wars {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 800px;
-    color: #feda4a;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 500%;
-    font-weight: 600;
-    letter-spacing: 6px;
-    line-height: 150%;
-    perspective: 400px;
-    text-align: justify;
-  }
-  
-  .crawl {
-    position: relative;
-    top: 99999px;
-    transform-origin: 50% 100%;
-    animation: crawl 60s linear;
-  }
-  
-  .crawl > .title {
-    font-size: 90%;
-    text-align: center;
-  }
-  
-  .crawl > .title h1 {
-    margin: 0 0 100px;
-    text-transform: uppercase;
-  }
-  
-  @keyframes crawl {
-    0% {
-      top: -100px;
-      transform: rotateX(20deg)  translateZ(0);
-    }
-    100% { 
-      top: -6000px;
-      transform: rotateX(25deg) translateZ(-2500px);
-    }
-  }
-
 
 @media (max-width: 800px){
     .about {

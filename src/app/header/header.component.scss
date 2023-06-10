@@ -4,13 +4,25 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.logo {
+    justify-content: flex-start;
+    font-size: 53px;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent  
 }
 
 .header-social img{
     height: 25px;
     width: 25px;
+}
+
+a {
+    margin-top: 10px;
 }
 
 img {
@@ -20,10 +32,15 @@ img {
 
 .header-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-left: 100px;
     padding-right: 150px;
+    height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .logo-menu-container {
@@ -40,10 +57,11 @@ img {
 .header-link img{
     height: 25px;
     width: 25px;
+
 }
 
 .header-container a{
-    color: #ffffff;
+    color: var(--text-color);
     margin-left: 50px;
     text-decoration: none;
 }
@@ -90,6 +108,7 @@ nav ul li a:hover {
     height: 40px;
     width: 40px;
     cursor: pointer;
+    margin-left: 40px;
 }
 
 .black {

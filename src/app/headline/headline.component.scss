@@ -6,14 +6,29 @@
     padding-top: 220px;
     padding-left: 150px;
     padding-right: 150px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;    
 }
 
 h1 {
   color: var(--text-color);
-  text-align: center;
+  text-align: flex-start;
+  padding-left: 10px;
   font-size: 56px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.name {
+  font-size: 212px;
+  font-family: sans-serif;
+  background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent    
 }
 
 span {
@@ -23,7 +38,8 @@ span {
 
 p {
   color: var(--text-color);
-  font-size: 22px;
+  padding-right: 400px;
+  font-size: 35px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;

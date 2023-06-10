@@ -12,7 +12,11 @@
     margin: 0 auto;
     padding: 40px;
     border-radius: 4px;
-    color: #fc0e49;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     
 }
@@ -22,7 +26,11 @@
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 36px;
-    color: #fc0e49;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
     text-align: center;
 }
 

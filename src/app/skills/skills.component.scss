@@ -6,7 +6,13 @@
 
 .skills-section {
 
-    color: white;
+    font-size: 39px;
+    font-family: sans-serif;
+    background: linear-gradient(60deg, #9845E8 -1.72%, #33D2FF 20.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     padding-top: 50px;
     
     
@@ -16,7 +22,11 @@
 
     text-align: center;
     font-size: 45px;
-    color: #fc0e49;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;  
 }
 
 .skill-image img{
