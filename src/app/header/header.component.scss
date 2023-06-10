@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
@@ -49,7 +49,7 @@ img {
 }
 
 .header-container a:hover{
-    color: #ff6e48;
+    color: #fc0e49;
     text-decoration: underline;
 }
 

@@ -1,13 +1,3 @@
-#myVideo {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-    height: 100px;
-}
-
 .headline-container{
     display: flex;
     justify-content: space-between;
@@ -19,7 +9,7 @@
 }
 
 h1 {
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
   font-size: 56px;
   margin-top: 10px;
@@ -27,12 +17,12 @@ h1 {
 }
 
 span {
-  color: #fff;
+  color: var(--text-color);
   font-size: 22px;
 }
 
 p {
-  color: #fff;
+  color: var(--text-color);
   font-size: 22px;
   text-align: center;
   margin-top: 10px;
@@ -44,44 +34,13 @@ p {
     padding-right: 150px;
 }
 
-.button{
-    display: inline-block;
-    background-color: #00e3aa;
-    color: #fff;
-    padding: .75rem 2.5rem;
-    font-weight: var(--font-semi);
-    border-radius: .5rem; 
-    text-decoration: none;
-}
-
-.button:hover {
-    opacity: 1;
-    background-color: white;
-    color: #00e3aa;
-
-}
-
 .headline-image img {
     height: 200px;
     width: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 1px solid #ff6e48;
+    border: 1px solid #fc0e49;
 
-}
-
-.fadeIn {
-    
-    margin-right: 40px;
-    
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
-    font-size: 56px;
-    color: white;
-  
 }
 
 .show-mobile {

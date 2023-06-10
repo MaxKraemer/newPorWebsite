@@ -1,11 +1,17 @@
 .about {
+  
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 150px;
 }
 
 .about-container {
-    color: #ff6e48;
+    position: absolute;
+    color: #fc0e49;
+    height: 300px;
+    width: 80%;
+    background-color: black;
+    border-radius: 10px;
     text-align: center;
     font-size: 30px;
     padding-top: 40px;
@@ -58,7 +64,7 @@
 
 .textArea h3 {
     text-align: center;
-    color: #ff6e48;
+    color: #fc0e49;
     font-size: 30px;
 }
 
