@@ -28,7 +28,7 @@ export class HeadlineComponent implements OnInit {
   showHeadline = true;
 
   ngOnInit(){
-
+    this.gsap.gsapAnimationHeadline();
   }
 
 

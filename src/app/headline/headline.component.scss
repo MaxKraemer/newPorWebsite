@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
-    padding-top: 220px;
+    padding-top: 150px;
     padding-left: 150px;
     padding-right: 150px;
     font-family: 'Lato', sans-serif;
@@ -22,7 +22,7 @@ h1 {
 }
 
 .name {
-  font-size: 212px;
+  font-size: 180px;
   font-family: sans-serif;
   background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   -webkit-background-clip: text;
@@ -38,7 +38,7 @@ span {
 
 p {
   color: var(--text-color);
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -57,9 +57,7 @@ p {
     border: 1px solid #fc0e49;
 
 }
-
 .show-mobile {
-
   display: none;
 }
 

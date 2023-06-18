@@ -55,9 +55,17 @@ export class GsapService {
         start: 'top center',
       },
     });
-    
+  };
+  public gsapAnimationHeadline(){
+    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
+    gsap.from('h1', {
+      opacity: 0,
+      stagger: 0.2,
+    });
+    gsap.from('span', {
+      opacity: 0,
+      x: -100
+    });
   };
 
-
- 
 }
