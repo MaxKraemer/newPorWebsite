@@ -62,7 +62,7 @@ export class GsapService {
       opacity: 0,
       stagger: 0.2,
     });
-    gsap.from('span', {
+    gsap.from('p', {
       opacity: 0,
       x: -100
     });
