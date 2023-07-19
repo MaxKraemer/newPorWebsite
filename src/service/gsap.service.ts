@@ -14,12 +14,19 @@ export class GsapService {
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('a', {
       opacity: 0,
-      stagger: 0.4,
+      stagger: 0.5,
     });
-    gsap.from('img', {
+    gsap.from('#starWarsImg', {
       opacity: 0,
-      stagger: 0.4,
+      stagger: 0.5,
+      x: 100,
+      duration: 1.5,
+    });
+    gsap.from('#logo', {
+      opacity: 0,
+      stagger: 0.5,
       x: -100,
+      duration: 1.5,
     });
   };
 
@@ -55,15 +62,25 @@ export class GsapService {
   };
   public gsapAnimationHeadline(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
-    gsap.from('h1', {
+    gsap.from('#headline', {
       opacity: 0,
-      stagger: 0.4,
-      x: -100,
+      stagger: 0.10,
+      y: -100,
+      duration: 1.3,
     });
-    gsap.from('p', {
-      opacity: 0,
+    gsap.from('#name', {
       x: 100,
-      stagger: 0.6,
+      stagger: 0.8,
+      duration: 1.5,
+    });
+    gsap.from('#content', {
+      opacity: 0,
+      y: 100,
+      stagger: 0.11,
+      duration: 1.8,
     });
   };
+
+
+
 }
