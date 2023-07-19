@@ -11,6 +11,7 @@ export class SkillsComponent implements OnInit {
   constructor(public gsap: GsapService) {}
 
   ngOnInit(): void {
+    this.gsap.gsapSkillsAnimation();
   }
 
 }

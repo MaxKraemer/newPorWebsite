@@ -81,6 +81,38 @@ export class GsapService {
     });
   };
 
+  public gsapSkillsAnimation(){
+    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
+    gsap.from('#skill-image', {
+      duration: 1.5,
+      opacity: 0,
+      x: -100,
+        scrollTrigger: {
+          trigger: '#skills',
+          start: 'left center',
+        },
+    });
+    gsap.from('#skill-images', {
+      duration: 1.5,
+      opacity: 0,
+      x: 100,
+        scrollTrigger: {
+          trigger: '#skills',
+          start: 'left center',
+        },
+    });
+    gsap.from('#skill-name', {
+      duration: 1.5,
+      opacity: 0,
+      y: 100,
+       scrollTrigger: {
+        trigger: '#skills',
+        start: 'top center',
+      },
+    });
+    
+  }
+
 
 
 }
