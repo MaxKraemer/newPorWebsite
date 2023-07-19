@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadlineComponent } from './headline/headline.component';
@@ -13,6 +12,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LandingComponent } from './landing/landing.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import {DarkModeService} from "../service/dark-mode.service";
 
 
 @NgModule({
@@ -28,13 +28,13 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     ImprintComponent,
     LandingComponent,
     DataProtectionComponent,
-  
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [DarkModeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

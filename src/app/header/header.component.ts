@@ -9,17 +9,11 @@ import { DarkModeService } from 'src/service/dark-mode.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public gsap: GsapService, public darkMode: DarkModeService) { }
-
-  public showImage = false;
-  public status = 'Enable';
+  constructor(public gsap: GsapService, public darkModeService: DarkModeService) { }
 
   ngOnInit(): void {
     this.gsap.gsapAnimationHeader();
+    this.darkModeService.toggleDarkMode();
   }
 
-  public toggleImage(): void {
-    this.showImage = !this.showImage;
-    this.status = this.showImage ? 'Enable' : 'Disable';
-  }
 }
