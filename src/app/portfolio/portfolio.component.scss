@@ -1,102 +1,72 @@
-.port-container {
-    display: flex;
-    justify-content: center;
+/* Common styles */
+.port-container,
+.port-container2,
+.port-container3 {
+  display: flex;
+  justify-content: center;
 }
 
 .port-section {
-    padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .port-title {
-    font-size: 39px;
-    font-family: sans-serif;
-    background: linear-gradient(60deg, #9845E8 -1.72%, #33D2FF 20.05%, #DD5789 99.78%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.port-section h2 {
-    text-align: center;
-    color: #fc0e49;
-    font-size: 45px;
+  font-size: 39px;
+  font-family: sans-serif;
+  background: linear-gradient(60deg, #9845E8 -1.72%, #33D2FF 20.05%, #DD5789 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  color: #fc0e49;
+  font-size: 45px;
 }
 
 .port-img img {
-    height: 250px;
-    border-radius: .5rem;
-    overflow: hidden;
-    margin-top: 20px;
-    width: 400px;
-    cursor: pointer;
-    transition: 1s ease;
+  height: 250px;
+  width: 400px;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 1s ease;
 }
 
 .port-img img:hover {
-    transform: scale(1.1);
-    transition: 0.5s ease-out ;
-}
-
-.port-container2 {
-    display: flex;
-    justify-content: center;
-}
-
-.port-container3 {
-    display: flex;
-    justify-content: center;
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
 }
 
 .mg-32 {
-    margin-right: 32px;
+  margin-right: 32px;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 800px) {
+  .port-container,
+  .port-container2,
+  .port-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .port-container {
+  .port-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  .mg-32 {
+    margin-right: 0;
+  }
 
-    .port-container2 {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
-    .port-container3{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-    .port-section {
-
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mg-32 {
-
-       margin-right: 0;
-    }
-
-    .port-img img {
-
-        width: 350px;
-    }
-    
+  .port-img img {
+    width: 350px;
+  }
 }

@@ -14,15 +14,12 @@ export class GsapService {
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('a', {
       opacity: 0,
-      stagger: 0.2,
+      stagger: 0.4,
     });
-    gsap.from('#toogle', {
+    gsap.from('img', {
       opacity: 0,
-      x: 100
-    });
-    gsap.from('#logo', {
-      opacity: 0,
-      y: -100,
+      stagger: 0.4,
+      x: -100,
     });
   };
 
@@ -60,12 +57,13 @@ export class GsapService {
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('h1', {
       opacity: 0,
-      stagger: 0.2,
+      stagger: 0.4,
+      x: -100,
     });
     gsap.from('p', {
       opacity: 0,
-      x: -100
+      x: 100,
+      stagger: 0.6,
     });
   };
-
 }
