@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GsapService } from 'src/service/gsap.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(public gsap: GsapService,) { }
 
   ngOnInit(): void {
+    this.gsap.gsapPortfolioAnimation();
   }
 
 }

@@ -110,9 +110,29 @@ export class GsapService {
         start: 'top center',
       },
     });
-    
   }
 
+  public gsapPortfolioAnimation(){
+    gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
+    gsap.from('#port-img', {
+      duration: 1.5,
+      opacity: 0,
+      x: -100,
+        scrollTrigger: {
+          trigger: '#skills',
+          start: 'left center',
+        },
+    });
+    gsap.from('#port-text', {
+      duration: 1.5,
+      opacity: 0,
+      x: 100,
+        scrollTrigger: {
+          trigger: '#skills',
+          start: 'left center',
+        },
+    });
+  
 
-
+  }
 }

@@ -4,6 +4,7 @@
 .port-container3 {
   display: flex;
   justify-content: center;
+  
 }
 
 .port-section {
@@ -42,6 +43,22 @@
 
 .mg-32 {
   margin-right: 32px;
+}
+
+.port-text {
+  padding-left: 30px;
+  padding-top: 8%;
+}
+
+.loco-img {
+  height: 300px;
+}
+
+.join-img {
+  height: 330px;
+}
+.quiz-img {
+  height: 300px;
 }
 
 /* Media query for smaller screens */
