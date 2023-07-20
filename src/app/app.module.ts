@@ -6,7 +6,6 @@ import { HeadlineComponent } from './headline/headline.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ImprintComponent } from './imprint/imprint.component';
@@ -22,7 +21,6 @@ import {DarkModeService} from "../service/dark-mode.service";
     HeaderComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent,
     FooterComponent,
     AboutMeComponent,
     ImprintComponent,
