@@ -119,7 +119,7 @@ export class GsapService {
       opacity: 0,
       x: -100,
         scrollTrigger: {
-          trigger: '#skills',
+          trigger: '#portfolio',
           start: 'left center',
         },
     });
@@ -128,7 +128,7 @@ export class GsapService {
       opacity: 0,
       x: 100,
         scrollTrigger: {
-          trigger: '#skills',
+          trigger: '#portfolio',
           start: 'left center',
         },
     });
