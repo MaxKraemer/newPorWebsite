@@ -1,36 +1,27 @@
-
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class DarkModeService {
   private renderer: Renderer2;
-  private readonly darkThemeClass = 'dark-theme';
+  private colorScheme: string = 'light';
 
-  constructor(private rendererFactory: RendererFactory2) {
-    this.renderer = this.rendererFactory.createRenderer(null, null);
-    this.loadThemeFromLocalStorage();
+  constructor(rendererFactory: RendererFactory2) {
+    this.renderer = rendererFactory.createRenderer(null, null);
   }
 
-  toggleDarkMode(): void {
-    if (this.isDarkModeEnabled()) {
-      this.renderer.removeClass(document.body, this.darkThemeClass);
-      localStorage.setItem('darkMode', 'false');
-    } else {
-      this.renderer.addClass(document.body, this.darkThemeClass);
-      localStorage.setItem('darkMode', 'true');
-    }
+  public enableDarkMode(): void {
+    this.colorScheme = 'dark';
+    this.renderer.addClass(document.body, 'dark-theme');
   }
 
-  isDarkModeEnabled(): boolean {
-    return document.body.classList.contains(this.darkThemeClass);
+  public disableDarkMode(): void {
+    this.colorScheme = 'light';
+    this.renderer.removeClass(document.body, 'dark-theme');
   }
 
-  private loadThemeFromLocalStorage(): void {
-    const darkMode = localStorage.getItem('darkMode');
-    if (darkMode && darkMode === 'true') {
-      this.renderer.addClass(document.body, this.darkThemeClass);
-    }
+  public isDarkModeEnabled(): boolean {
+    return this.colorScheme === 'dark';
   }
 }

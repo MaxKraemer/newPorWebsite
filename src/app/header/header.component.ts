@@ -13,7 +13,15 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.gsap.gsapAnimationHeader();
-    this.darkModeService.toggleDarkMode();
+    this.toggleDarkMode();
+  }
+
+  toggleDarkMode(): void {
+    if (this.darkModeService.isDarkModeEnabled()) {
+      this.darkModeService.disableDarkMode();
+    } else {
+      this.darkModeService.enableDarkMode();
+    }
   }
 
 }

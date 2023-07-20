@@ -14,7 +14,7 @@
     </div>
     <div class="toggle-container">
       <div class="toggle-logo">
-        <img (click)="darkModeService.toggleDarkMode()" src="assets/img/strormtrooper.png" alt="" id="starWarsImg">
+        <img (click)="toggleDarkMode()" [src]="darkModeService.isDarkModeEnabled() ? 'assets/img/strormtrooper.png' : 'assets/img/Vader.png'" alt="Bild" alt="" id="starWarsImg">
       </div>
     </div>
   </div>
