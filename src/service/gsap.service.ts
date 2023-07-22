@@ -132,6 +132,24 @@ export class GsapService {
           start: 'left center',
         },
     });
+    gsap.from('#port-join-img', {
+      duration: 1.5,
+      opacity: 0,
+      x: 100,
+        scrollTrigger: {
+          trigger: '#portfolio',
+          start: 'left center',
+        },
+    });
+    gsap.from('#port-join-text', {
+      duration: 1.5,
+      opacity: 0,
+      x: -100,
+        scrollTrigger: {
+          trigger: '#portfolio',
+          start: 'left center',
+        },
+    });
   
 
   }
