@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {GsapService} from "../../service/gsap.service";
+import {GsapService} from "../../../service/gsap.service";
 
 @Component({
   selector: 'app-skills',

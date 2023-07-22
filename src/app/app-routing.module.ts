@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { HeadlineComponent } from './headline/headline.component';
-import { ImprintComponent } from './imprint/imprint.component';
-import { LandingComponent } from './landing/landing.component';
+import { DataProtectionComponent } from './components/data-protection/data-protection.component';
+import { HeadlineComponent } from './components/headline/headline.component';
+import { ImprintComponent } from './components/imprint/imprint.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 
 
