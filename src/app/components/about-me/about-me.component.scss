@@ -21,12 +21,18 @@ h2 {
 .images {
     padding-left: 70px;
     padding-right: 70px;
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
 }
 
 .images img{
     height: 380px;
     width: 679px;
     object-fit: cover;
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
 }
 
 .aboutContainer{
@@ -52,6 +58,9 @@ p {
     justify-content: space-evenly;
     font-family: 'Open Sans', sans-serif;
     padding-top: 50px;
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
 }
 
 .text2 {
@@ -73,6 +82,9 @@ p {
     padding: 0;
     font-size: 16px;
     line-height: 28px;
+    @media screen and (max-width: 800px) {
+        padding: 5px;
+    }
 }
 
 @media (max-width: 800px){

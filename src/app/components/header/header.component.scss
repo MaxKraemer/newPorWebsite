@@ -12,6 +12,10 @@ header {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 10px;
+    }
   }
 
   .header-social img {
@@ -51,6 +55,9 @@ img {
   img {
     height: 25px;
     width: 25px;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 }
 
@@ -105,6 +112,9 @@ img {
     width: 50px;
     cursor: pointer;
     margin-left: 40px;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
 
   }
   &:hover {
@@ -113,6 +123,15 @@ img {
   }
 }
 
+.burger-menu-mobile {
+  display: none;
+  @media screen and (max-width: 800px) {
+    display: block;
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+}
 
 // Themes
 .black {

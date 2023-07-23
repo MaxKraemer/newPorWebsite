@@ -6,6 +6,9 @@ p {
 /* Skills section */
 .skills-section {
   padding-top: 150px;
+  @media screen and (max-width: 800px) {
+    padding-top: 50px;
+  }
 }
 
 .skills-section h2 {
@@ -41,8 +44,8 @@ p {
 }
 
 .skill-image img {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 
 .skills-name {

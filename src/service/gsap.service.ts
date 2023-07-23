@@ -22,6 +22,12 @@ export class GsapService {
       x: 100,
       duration: 1.5,
     });
+    gsap.from('#burger-menu', {
+      opacity: 0,
+      stagger: 0.5,
+      x: 100,
+      duration: 1.5,
+    });
     gsap.from('#logo', {
       opacity: 0,
       stagger: 0.5,
