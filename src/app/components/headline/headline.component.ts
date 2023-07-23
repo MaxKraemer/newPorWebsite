@@ -1,9 +1,11 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { gsap } from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GsapService } from 'src/service/gsap.service';
 import Typed from 'typed.js';
+
 
 
 @Component({
@@ -13,26 +15,14 @@ import Typed from 'typed.js';
 })
 export class HeadlineComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef) {}
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
+  constructor(public gsap: GsapService) { }
+
+
+  ngOnInit(){
+    this.gsap.gsapAnimationHeadline();
   }
-
-  ngAfterViewInit() {
-    const headlineOptions = {
-      strings: ['Max Kraemer', 'Web Developer', 'future Scrum Master'],
-      typeSpeed: 100,
-      loop: true
-    };
-
-    new Typed(this.elementRef.nativeElement.querySelector('#name'), headlineOptions);
-  }
-  }
-
-
-
-
-
+}
 
 
 
