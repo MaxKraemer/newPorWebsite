@@ -29,7 +29,7 @@
   font-size: 45px;
 }
 
-.loco-img {
+.weather-img {
   @media screen and (max-width: 800px) {
     width: 100%
   }
@@ -47,6 +47,8 @@
   }
 
   p {
+    color: #fff;
+    text-decoration: none;
     @media screen and (max-width: 800px) {
       display: none;
     }
@@ -58,7 +60,7 @@
   height: 300px;
 }
 
-.join-img {
+.weather-img {
   height: 330px;
   @media  screen and (max-width: 800px) {
     width: 100%;
