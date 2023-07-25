@@ -138,7 +138,7 @@ export class GsapService {
           start: 'left center',
         },
     });
-    gsap.from('#port-join-img', {
+    gsap.from('#port-weather-img', {
       duration: 1.5,
       opacity: 0,
       x: 100,
@@ -147,7 +147,7 @@ export class GsapService {
           start: 'left center',
         },
     });
-    gsap.from('#port-join-text', {
+    gsap.from('#port-weather-text', {
       duration: 1.5,
       opacity: 0,
       x: -100,
