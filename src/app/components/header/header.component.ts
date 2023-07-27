@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(public gsap: GsapService, public darkModeService: DarkModeService) { }
 
+  isSidebarOpen: boolean = true;
+
   ngOnInit(): void {
     this.gsap.gsapAnimationHeader();
     this.toggleDarkMode();
@@ -22,6 +24,11 @@ export class HeaderComponent implements OnInit {
     } else {
       this.darkModeService.enableDarkMode();
     }
+  }
+
+  
+  toggleSidebar(): void {
+    this.isSidebarOpen = !this.isSidebarOpen;
   }
 
 }

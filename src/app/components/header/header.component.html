@@ -17,10 +17,22 @@
       <div class="toggle-logo">
         <img (click)="toggleDarkMode()" [src]="darkModeService.isDarkModeEnabled() ? 'assets/img/strormtrooper.png' : 'assets/img/Vader.png'" alt="Bild" alt="" id="starWarsImg">
       </div>
-      <div class="burger-menu-mobile">
-        <span class="material-symbols-outlined" id="burger-menu" style="font-size: 40px">
-          menu
-          </span>
+      <div class="container">
+        <div class="sidebar" [ngClass]="{ 'open': isSidebarOpen }">
+          <span (click)="toggleSidebar()" class="material-symbols-outlined icon" style="font-size: 40px;">
+            close
+            </span>
+          <a href="#home"><b>Home</b></a>
+          <a href="#aboutme"><b>About Me</b></a>
+          <a href="#skills"><b>Skills</b></a>
+          <a href="#portfolio"><b>Portfolio</b></a>
+          <a href="/imprint"><b>Contact</b></a>
+        </div>
+        <div class="content">
+          <span (click)="toggleSidebar()" class="material-symbols-outlined toggle-button" id="burger-menu" style="font-size: 40px">
+            menu
+            </span>
+        </div>
       </div>
     </div>
   </div>
