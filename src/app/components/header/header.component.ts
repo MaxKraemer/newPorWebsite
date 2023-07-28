@@ -18,7 +18,10 @@ export class HeaderComponent implements OnInit {
     this.toggleDarkMode();
   }
 
-  toggleDarkMode(): void {
+/**
+ * Toggle dark mode
+ */
+  public toggleDarkMode(): void {
     if (this.darkModeService.isDarkModeEnabled()) {
       this.darkModeService.disableDarkMode();
     } else {
@@ -26,8 +29,10 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  
-  toggleSidebar(): void {
+  /**
+   * Toggle sidebar
+   */
+  public toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 
