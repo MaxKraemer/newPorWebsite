@@ -11,16 +11,24 @@ export class DarkModeService {
     this.renderer = rendererFactory.createRenderer(null, null);
   }
 
+  /**
+   * Enable dark mode
+   */
   public enableDarkMode(): void {
     this.colorScheme = 'dark';
     this.renderer.addClass(document.body, 'dark-theme');
   }
-
+  /**
+   * Disable dark mode
+   */
   public disableDarkMode(): void {
     this.colorScheme = 'light';
     this.renderer.removeClass(document.body, 'dark-theme');
   }
-
+  /**
+   * @returns 
+   * Check if dark mode is enabled
+   */
   public isDarkModeEnabled(): boolean {
     return this.colorScheme === 'dark';
   }

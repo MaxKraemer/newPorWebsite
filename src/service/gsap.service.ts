@@ -10,6 +10,9 @@ export class GsapService {
 
   constructor() { }
 
+  /**
+   * GSAP animation for header
+   */
   public gsapAnimationHeader(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('a', {
@@ -36,6 +39,9 @@ export class GsapService {
     });
   };
 
+  /**
+   * GSAP animation for about
+   */
   public gsapScrollAbout(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('#img', {
@@ -66,6 +72,10 @@ export class GsapService {
       },
     });
   };
+
+  /**
+   * GSAP animation for headline
+   */
   public gsapAnimationHeadline(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('#headline', {
@@ -86,7 +96,9 @@ export class GsapService {
       duration: 1.8,
     });
   };
-
+  /**
+   * GSAP animation for skills
+   */
   public gsapSkillsAnimation(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('#skill-image', {
@@ -118,6 +130,9 @@ export class GsapService {
     });
   }
 
+  /**
+   * GSAP animation for portfolio
+   */
   public gsapPortfolioAnimation(){
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
     gsap.from('#port-img', {
