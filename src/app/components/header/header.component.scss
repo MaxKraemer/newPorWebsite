@@ -1,20 +1,23 @@
+// Header styles
 header {
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1;
 
-  .logo p {
-    justify-content: flex-start;
-    font-size: 53px;
-    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    
-    @media screen and (max-width: 800px) {
-      margin-left: 10px;
+  .logo {
+    p {
+      justify-content: flex-start;
+      font-size: 53px;
+      background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      
+      @media screen and (max-width: 800px) {
+        margin-left: 10px;
+      }
     }
   }
 
@@ -115,7 +118,6 @@ img {
     @media screen and (max-width: 800px) {
       display: none;
     }
-
   }
   &:hover {
     transform: scale(1.2);
@@ -216,6 +218,7 @@ img {
     text-decoration: underline;
   }
 
+  // Responsive Sidebar styles
   .sidebar {
     background-color: #131313;
     color: #fff;
@@ -244,6 +247,10 @@ img {
     display: none;
   }
 
+  .d-none {
+    display: none;
+  }
+
   @media (max-width: 768px) {
     .sidebar {
       position: absolute;
@@ -258,6 +265,9 @@ img {
     }
   
     .toggle-button {
+      display: block;
+    }
+    .d-none {
       display: block;
     }
   }

@@ -18,8 +18,8 @@
         <img (click)="toggleDarkMode()" [src]="darkModeService.isDarkModeEnabled() ? 'assets/img/strormtrooper.png' : 'assets/img/Vader.png'" alt="Bild" alt="" id="starWarsImg">
       </div>
       <div class="container">
-        <div class="sidebar" [ngClass]="{ 'open': isSidebarOpen }">
-          <span (click)="toggleSidebar()" class="material-symbols-outlined icon" style="font-size: 40px;">
+        <div class="sidebar d-none" [ngClass]="{ 'open': isSidebarOpen }">
+          <span (click)="toggleSidebar()" class="material-symbols-outlined" style="font-size: 40px;">
             close
             </span>
           <a href="#home"><b>Home</b></a>
@@ -29,7 +29,7 @@
           <a href="/imprint"><b>Contact</b></a>
         </div>
         <div class="content">
-          <span (click)="toggleSidebar()" class="material-symbols-outlined toggle-button" id="burger-menu" style="font-size: 40px">
+          <span (click)="toggleSidebar()" class="material-symbols-outlined toggle-button d-none" id="burger-menu" style="font-size: 40px">
             menu
             </span>
         </div>
