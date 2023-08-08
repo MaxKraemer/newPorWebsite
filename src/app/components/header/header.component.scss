@@ -219,24 +219,7 @@ img {
   }
 
   // Responsive Sidebar styles
-  .sidebar {
-    background-color: #131313;
-    color: #fff;
-    width: 250px;
-    padding: 20px;
-    font-size: 30px;
-    transition: transform 0.5s ease-in-out;
-  }
-  .sidebar a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar a:hover {
-    text-decoration: underline;
-  }
+ 
   
   .content {
     flex: 1;
@@ -251,13 +234,33 @@ img {
     display: none;
   }
 
+ 
+
   @media (max-width: 768px) {
     .sidebar {
       position: absolute;
-      top: 0;
-      left: 150px;
+      top: 0px;
+      right: 0px;
       height: 100%;
       z-index: 999;
+      background-color: #131313;
+      color: #fff;
+      width: 500px;
+      padding: 20px;
+      font-size: 30px;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .sidebar a:hover {
+      text-decoration: underline;
     }
   
     .sidebar.open {
