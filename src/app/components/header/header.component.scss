@@ -150,93 +150,92 @@ img {
 }
 
 // Media Query for Mobile Devices
-@media (max-width: 800px) {
-  .header-container {
-    padding: 0;
-  }
+  @media (max-width: 768px) {
 
-  .hide-mobile {
-    display: none;
-  }
-
-  .menu-responsive {
-    display: contents;
-    cursor: pointer;
-
-    img {
+    .header-container {
+      padding: 0;
+    }
+  
+    .hide-mobile {
+      display: none;
+    }
+  
+    .menu-responsive {
+      display: contents;
+      cursor: pointer;
+  
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 20px;
+        padding-right: 35px;
+        width: 40px;
+      }
+    }
+  
+    .overlay-menu {
+      height: 220px;
+      width: 200px;
+      background-color: #ff6e48;
+      border-radius: 5px;
       position: absolute;
       top: 0;
       right: 0;
-      padding-top: 20px;
-      padding-right: 35px;
-      width: 40px;
     }
-  }
-
-  .overlay-menu {
-    height: 220px;
-    width: 200px;
-    background-color: #ff6e48;
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .nav-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 50px;
-
-    a {
-      font-size: 20px;
+  
+    .nav-list {
       display: flex;
-      justify-content: flex-end;
-      padding-right: 20px;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 50px;
+  
+      a {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+      }
     }
-  }
-
-  button {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .btn {
-    background-color: #ff6e48;
-    border: none;
-    color: #ff6e48;
-    font-size: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    cursor: pointer;
-  }
-
-  .header-container a:hover {
-    color: #ff6e48;
-    text-decoration: underline;
-  }
-
-  // Responsive Sidebar styles
- 
   
-  .content {
-    flex: 1;
-    padding: 20px;
-  }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   
-  .toggle-button {
-    display: none;
-  }
-
-  .d-none {
-    display: none;
-  }
-
- 
-
-  @media (max-width: 768px) {
+    .btn {
+      background-color: #ff6e48;
+      border: none;
+      color: #ff6e48;
+      font-size: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      cursor: pointer;
+    }
+  
+    .header-container a:hover {
+      color: #ff6e48;
+      text-decoration: underline;
+    }
+  
+    // Responsive Sidebar styles
+   
+    
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .toggle-button {
+      display: none;
+    }
+  
+    .d-none {
+      display: none;
+    }
+  
+   
     .sidebar {
       position: absolute;
       top: 0px;
@@ -274,4 +273,3 @@ img {
       display: block;
     }
   }
-}
