@@ -19,14 +19,16 @@
       </div>
       <div class="container">
         <div class="sidebar d-none" [ngClass]="{ 'open': isSidebarOpen }">
-          <span (click)="toggleSidebar()" class="material-symbols-outlined" style="font-size: 40px;">
+          <span (click)="toggleSidebar()" class="material-symbols-outlined close-icon" style="font-size: 40px;">
             close
             </span>
+        <div class="mobile-menu">
           <a href="#home"><b>Home</b></a>
           <a href="#aboutme"><b>About Me</b></a>
           <a href="#skills"><b>Skills</b></a>
           <a href="#portfolio"><b>Portfolio</b></a>
           <a href="/imprint"><b>Contact</b></a>
+        </div>
         </div>
         <div class="content">
           <span (click)="toggleSidebar()" class="material-symbols-outlined toggle-button d-none" id="burger-menu" style="font-size: 40px">
