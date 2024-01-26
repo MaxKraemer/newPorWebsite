@@ -32,12 +32,6 @@
   font-size: 45px;
 }
 
-.weather-img {
-  @media screen and (max-width: 800px) {
-    width: 100%
-  }
-}
-
 .mg-32 {
   margin-right: 32px;
 }
@@ -57,15 +51,16 @@
   }
 }
 
-.loco-img {
+.weather-img {
   height: 300px;
+  padding-left: 120px;
   @media  screen and (max-width: 800px) {
     width: 100%;
     height: auto;
   }
 }
 
-.weather-img {
+.disney-img {
   height: 330px;
   @media  screen and (max-width: 800px) {
     width: 100%;
